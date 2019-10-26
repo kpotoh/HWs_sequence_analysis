@@ -1,21 +1,29 @@
 #!/bin/bash
 
-echo 'start processing\n'
+echo 'start processing'
+echo
 
 # download sra files from ncbi using fastq-dump
 bash ./download_SRA_file.sh
-echo 'fastq files downloaded\n'
+echo '------------------------'
+echo 'fastq files downloaded'
+echo
 
 # get first QC
-bash ./qc_of_raw_file.sh
-echo 'first QC done\n'
+bash ./qc.sh ../data/raw/ ../data/qc/first_check/
+echo '------------------------'
+echo 'first QC done'
+echo
 
 # clean files
 bash ./clean_fastq.sh
-echo 'fastq files cleaned\n'
+echo '------------------------'
+echo 'fastq files cleaned'
+echo
 
 # 2nd QC
-bash ./qc_of_trimmed_file.sh
+bash ./qc.sh ../data/interim/ ../data/qc/check_trimmed/
+echo '------------------------'
 echo 'last QC done'
 
 echo 'finish'
