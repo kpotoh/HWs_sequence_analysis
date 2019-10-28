@@ -26,4 +26,9 @@ bash ./qc.sh ../data/interim/ ../data/qc/check_trimmed/
 echo '------------------------'
 echo 'last QC done'
 
+# contamination QC
+bash ./fast_screen_qc.sh
+echo '------------------------'
+echo 'fastq screen QC done'
+
 echo 'finish'

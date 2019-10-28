@@ -1,0 +1,11 @@
+#Fastq_screen version: 0.14.0	#Aligner: bowtie2	#Reads in subset: 100000
+Genome	#Reads_processed	#Unmapped	%Unmapped	#One_hit_one_genome	%One_hit_one_genome	#Multiple_hits_one_genome	%Multiple_hits_one_genome	#One_hit_multiple_genomes	%One_hit_multiple_genomes	Multiple_hits_multiple_genomes	%Multiple_hits_multiple_genomes
+Human	105365	38	0.04	3	0.00	59311	56.29	0	0.00	46013	43.67
+Drosophila	105365	59352	56.33	0	0.00	0	0.00	0	0.00	46013	43.67
+Arabidopsis	105365	105364	100.00	0	0.00	1	0.00	0	0.00	0	0.00
+Ecoli	105365	105364	100.00	0	0.00	1	0.00	0	0.00	0	0.00
+MT	105365	105365	100.00	0	0.00	0	0.00	0	0.00	0	0.00
+Lambda	105365	105365	100.00	0	0.00	0	0.00	0	0.00	0	0.00
+Adapters	105365	105365	100.00	0	0.00	0	0.00	0	0.00	0	0.00
+
+%Hit_no_genomes: 0.03
